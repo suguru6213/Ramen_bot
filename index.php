@@ -1,5 +1,5 @@
 <?php
-$accessToken = 'Yr92ww5KguLEYnhF+4tYegWq4yweGCxzL5MXGvGc5nfu5w7HMeHC1jCXVbWxYNLEvp6Mcswp79rEm3oJRN9m/pwWYuOhAdqmG/cpnb9/GC2jlrsKzZVD3Esx/6ziqcLj7Vv7MjqWJSjZmuP4mMJf8wdB04t89/1O/w1cDnyilFU=';
+$accessToken = 'xxxxxxxxxxxxxx';
 //ユーザーからのメッセージ取得
 $json_string = file_get_contents('php://input');
 $json_object = json_decode($json_string);
@@ -14,7 +14,7 @@ $total = $message_latitude + $message_longitude;
 //メッセージタイプが「text」以外のときは何も返さず終了
 if ($message_type != "location") exit;
 	try {
-		$dbh = new PDO('mysql:host=localhost;dbname=procir_ichikawa358', 'ichikawa358', 'etkb79titp');
+		$dbh = new PDO('mysql:host=localhost;dbname=xxxxxxxxxxxxxxxx', 'xxxxxxxxxxx', 'xxxxxxxxxx');
 	} catch (PDOException $e) {
 		echo 'DB接続エラー：' . $e->getMessage();
 		exit();
